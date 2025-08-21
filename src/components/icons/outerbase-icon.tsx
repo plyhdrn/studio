@@ -542,3 +542,23 @@ export function DoltIcon({ className }: { className?: string }) {
     </svg>
   );
 }
+
+export function MSSQLIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      className={cn("w-12 h-12 shrink-0", className)}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M3 4V20H21V4H3ZM19 18H5V8H19V18ZM5 6V7H19V6H5Z"
+        fill="currentColor"
+      />
+      <rect x="7" y="10" width="2" height="6" fill="currentColor" />
+      <rect x="11" y="10" width="2" height="6" fill="currentColor" />
+      <rect x="15" y="10" width="2" height="6" fill="currentColor" />
+      <rect x="7" y="12" width="10" height="2" fill="currentColor" />
+    </svg>
+  );
+}

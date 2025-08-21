@@ -1,5 +1,6 @@
 import { ChartBar, Database } from "@phosphor-icons/react";
 import {
+  MSSQLIcon,
   MySQLIcon,
   PostgreIcon,
   RqliteIcon,
@@ -40,6 +41,7 @@ export function getDatabaseFriendlyName(type: string) {
 export function getDatabaseIcon(type: string) {
   if (type === "mysql") return MySQLIcon;
   if (type === "postgres") return PostgreIcon;
+  if (type === "mssql") return MSSQLIcon;
   if (
     type === "cloudflare" ||
     type === "cloudflare-d1" ||

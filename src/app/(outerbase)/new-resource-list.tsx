@@ -1,4 +1,5 @@
 import {
+  MSSQLIcon,
   MySQLIcon,
   PostgreIcon,
   SQLiteIcon,
@@ -62,6 +63,13 @@ export function getCreateResourceTypeList(
       href: workspaceId
         ? `/w/${workspaceId}/new-base/mysql`
         : "/local/new-base/mysql",
+    },
+    {
+      name: "Microsoft SQL",
+      icon: MSSQLIcon,
+      href: workspaceId
+        ? `/w/${workspaceId}/new-base/mssql`
+        : "/local/new-base/mssql",
     },
     {
       name: "SQLite",
