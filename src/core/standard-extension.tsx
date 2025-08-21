@@ -25,6 +25,10 @@ export function createMySQLExtensions() {
   return [...createStandardExtensions(), new TriggerEditorExtension()];
 }
 
+export function createMSSQLExtensions() {
+  return [...createStandardExtensions(), new TriggerEditorExtension()];
+}
+
 export function createPostgreSQLExtensions() {
   return createStandardExtensions();
 }

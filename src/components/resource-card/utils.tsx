@@ -40,6 +40,7 @@ export function getDatabaseFriendlyName(type: string) {
 export function getDatabaseIcon(type: string) {
   if (type === "mysql") return MySQLIcon;
   if (type === "postgres") return PostgreIcon;
+  if (type === "mssql") return Database; // Use generic database icon for now
   if (
     type === "cloudflare" ||
     type === "cloudflare-d1" ||
